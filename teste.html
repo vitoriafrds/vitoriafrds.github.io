@@ -9,25 +9,26 @@
     background-color: #91b2e8;
     margin: 0;
     font-family: Consolas, monospace;
-  }
-  
-  .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    flex-direction: column;
+    height: 100vh;
   }
 
-  @keyframes blink {
-    0% {
-      opacity: 0;
+  .text {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(40, end);
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
     }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
+    to {
+      width: 20%;
     }
   }
 
@@ -53,9 +54,7 @@
 </style>
 </head>
 <body>
-  <div class="container">
-    <div class="blink">🔥 você é uma gostosa do caralho 🔥</div>
-  </div>
+  <div class="text">🔥 você é uma gostosa do caralho 🔥</div>
   <div class="footer">&copy; 2024 Vitoria Ferreira</div>
 </body>
 </html>
