@@ -6,19 +6,25 @@
 <title>Carol Bueno 🔥</title>
 <style>
   body {
-    background-color: #8cb0ea;
+    background-color: #91b2e8;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     font-family: Consolas, monospace;
   }
   
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
   .blink {
     animation: blink 1s infinite;
-    font-size: 48px;
+    font-size: 100px; /* Tamanho da fonte ajustado para 14px */
     font-weight: bold;
+    text-align: center; /* Texto centralizado */
+    margin-bottom: 20px;
   }
   
   @keyframes blink {
@@ -32,9 +38,29 @@
       opacity: 0;
     }
   }
+
+  @media only screen and (max-width: 600px) {
+    .blink {
+      font-size: 12vw;
+    }
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    font-size: 65px;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
 </style>
 </head>
 <body>
-  <div class="blink">🔥 CAROL, VOCÊ É UMA GOSTOSA DO CARALHO 🔥</div>
+  <div class="container">
+    <div class="blink">🔥 você é uma gostosa do caralho 🔥</div>
+  </div>
+  <div class="footer">&copy; 2024 Vitoria Ferreira</div>
 </body>
 </html>
